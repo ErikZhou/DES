@@ -5,6 +5,7 @@
 #include <string>
 //c++ 实现des加密算法
 //https://www.zhaokeli.com/article/8223.html
+//DES加密算法的C++实现 https://blog.csdn.net/lisonglisonglisong/article/details/41777413
 /* usage
 #include "des_base64.h"
 #include <string>
