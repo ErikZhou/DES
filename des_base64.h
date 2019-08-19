@@ -5,6 +5,24 @@
 #include <string>
 //c++ 实现des加密算法
 //https://www.zhaokeli.com/article/8223.html
+/* usage
+#include "des_base64.h"
+#include <string>
+#include <iostream>
+
+int main()
+{
+    std::string sInput = "111111$$";
+    std::cout<<"sInput="<<sInput<<"\n";
+    std::string s = CDES::EnCode(sInput, "12345678");
+    std::cout<<"EnCode="<<s<<"\n";
+    std::string s1 = CDES::DeCode(s, "12345678");
+
+    std::cout<<"DeCode="<<s1<<"\n";
+
+    return 0;
+}
+*/
 using namespace std;
 //---------------------------------------------------------------------------  
 //////////////////////////////////////////////////////////////////////  
@@ -15,6 +33,7 @@ using namespace std;
 /* TDES类说明
 *
 * 该类是DES和3DES算法类
+* if the lenght of input less then 8, there will be get wrong result!
 *
 */
 class CDES
